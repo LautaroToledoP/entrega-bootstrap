@@ -1,0 +1,44 @@
+.contenedorp{
+    background-color: aqua;
+    width: 800px;
+    height: 100vh;
+    border: 5px solid black;
+    border-style: dashed;
+    display: grid;
+    grid-template-areas:"nav encabezado encabezado"
+    "nav principal principal"
+    "nav art1 art2"
+    "nav pie pie";
+}
+header{
+    background-color: brown;
+    height: 100px;
+    grid-area: encabezado;
+}
+nav{
+    background-color: rgb(61, 42, 165);
+    grid-area: nav;
+
+}   
+main{
+    background-color: rgb(50, 165, 42);
+    height: 300px;
+    grid-area: principal;
+}
+.art1{
+    background-color: rgb(151, 42, 165);
+    grid-area: art1;
+    height: 50px;
+
+}
+.art2{
+    background-color: rgb(165, 42, 149);
+    grid-area: art2;
+    height: 50px;
+
+}   
+footer{
+    background-color: rgb(151, 165, 42);
+    height: 100px;
+    grid-area: pie;
+}

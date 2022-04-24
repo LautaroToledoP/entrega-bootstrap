@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.encabezado{
+    background-color: rgb(5, 39, 52);
+    background-image: url("../images/mangalogo2.jpg");
+    background-repeat: no-repeat;
+    border: 2px solid;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    width: 100%;
+     
+}
+a{
+    text-decoration: none;
+}
+
+.centrado{
+    text-align: center;
+}
+body{
+   background-color:#3faace;
+   font-family: 'Oswald', sans-serif;
+   font-size: small;
+   display: flex;
+   flex-direction: col;
+   flex-flow: wrap;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    color: white;
+}
+.textoverde{
+    color: rgb(59, 0, 196);
+}
+
+.textodescriptivo{
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.video{
+    text-align: center;
+}
+.fondovideo{
+    background-image: url("../images/mangalogo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 338px;
+}
+.logo{
+    margin-right: auto;
+    margin-left: 500px;
+
+    
+}
+.button-container{
+    display: flex; 
+   padding: 5px;
+   justify-content:center;
+   font-weight: bold;
+   height: 60px;
+   flex-direction:row;
+   width: 1246px;
+   
+}
+.button-container div{
+
+    background-color:rgb(240, 234, 150);
+    width: 100px;
+    height: 20px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid;
+    width: 150px;
+    height: 20px;
+    font-style: italic;
+    display: inline-block;
+    margin-top: 72px;
+}
+.pie{
+    background-color: rgb(5, 39, 52);
+    height: 115px;
+}
+.pie__redes{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  width: 40px;
+}
+.mangaline article{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    align-items: center;
+    display: inline-block;
+
+    
+}
+html{
+    font-size: 62.5%;
+}
+.h3espacio{
+    padding-top: 10%;
+    margin-left: 4px;
+    margin-right: auto;
+}
+.subrayado{
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 2, 2);
+}
+.contactoaling{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 575px;
+    text-align:left
+}
+.contactoh1{
+    text-align: center;
+    text-decoration: underline black;
+}
+.piecontac{
+    background-color: rgb(5, 39, 52);
+    margin-top: 250px;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    overflow: hidden;
+    
+}   
+.divotro{
+    text-align: right;
+}
+.headercont{
+  background-image: url(../images/mangalogo.jpg);
+  height: 100px;
+  background-size: auto;
+}
+.encabezadobi{
+    background-image: url(../images/mangalogo2.jpg);
+    height: 175px;
+    background-size: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 100%;
+
+}
+.divtubi{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 1260px;
+}
+.tubi{
+    color: rgb(246, 252, 91);
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid;
+    background-color: black;
+
+}
+.border img{
+    border: 2px solid black;
+    border-radius: 5px ;
+}
+.border iframe{
+    border: 12px solid black;
+    border-radius: 9px ;
+}
+.divpop{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 1260px;
+}
+.mangaspop{
+    color: rgb(246, 252, 91);
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid;
+    width: 120px;
+    height: 58px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: 45%;
+}
+.h1{
+    color: rgb(255, 65, 17);
+    background-color: black;
+    border: 2px solid;
+    width: 350px;
+    height: 75px;
+    font-size: 42px;
+    margin-right: auto;
+    margin-left: 448px;
+}
+.h3pie{
+    margin: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+    "nav" "encabezado" "encabezado"
+    "nav" "sec" "sec"
+    "nav" "sec" "sec"
+    "pie" "pie" "pie";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 1fr ;
+}
+nav{
+    grid-area: nav;
+}
+header{
+    grid-area: encabezado;
+}
+section{
+    grid-area: sec;
+}
+footer{
+    grid-area: pie;
+}
