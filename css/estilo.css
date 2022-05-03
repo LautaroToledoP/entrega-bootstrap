@@ -208,11 +208,16 @@ html{
     background-color: black;
 
 }
-.border img{
+section img{
+    border: 2px solid black;
+    border-radius: 5px ;
+
+}
+div img{
     border: 2px solid black;
     border-radius: 5px ;
 }
-.border iframe{
+div iframe{
     border: 12px solid black;
     border-radius: 9px ;
 }
