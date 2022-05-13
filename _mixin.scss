@@ -1,0 +1,7 @@
+@mixin imgmanga($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+.article img{
+    @include imgmanga(100px,150px)
+}

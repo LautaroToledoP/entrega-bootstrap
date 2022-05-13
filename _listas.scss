@@ -1,0 +1,8 @@
+$colores:("biblio": #f0ea96,"login": #f0ea96,"leer": #f0ea96,"inicio": #f0ea96,"contac": #f0ea96);
+
+@each $name, $color in $colores {
+    .btn-#{$name}{
+        background-color:$color;
+    }
+    
+}
