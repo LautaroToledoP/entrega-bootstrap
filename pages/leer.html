@@ -10,27 +10,40 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilo.css">
     </head>
     <body>
         <header class="encabezadobi">
             <nav class="button-container">
-                <div>
-                   <a href="../pages/biblioteca.html">Biblioteca</a>
-                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="pages/biblioteca.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">  Biblioteca </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="pages/biblioteca.html">Vagabond</a></li>
+                      <li><a class="dropdown-item" href="pages/biblioteca.html">Boku No Hero</a></li>
+                      <li><a class="dropdown-item" href="pages/biblioteca.html">Slime Datta Ken</a></li>
+                    </ul>
+                  </div>
                 <div>      
                     <a href="../pages/login.html">Login</a>
                 </div>
-                <div>    
-                      <a href="../pages/leer.html">Leer</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="/pages/leer.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Leer
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="pages/leer.html">Dragon Ball Super</a></li>
+                        <li><a class="dropdown-item" href="pages/leer.html">Vinland</a></li>
+                        <li><a class="dropdown-item" href="pages/leer.html">Death Note</a></li>
                 </div>       
                 <div>
                       <a href="../index.html">Inicio</a>
                 </div>  
                 <div>     
                       <a href="../pages/contacto.html">Contacto</a>
-                </div> 
-                       
+                </div>       
              </nav>
         </header>
         <div class="divtubi centrado tubi">
@@ -57,5 +70,8 @@
                     <a href="Whatsapp"><img src="../images/wsp.png" alt="wsp" width="15px"></a>
                 </div>
             </footer>
+            <script src="js/wow.min.js"></script>
+            <script>new WOW().init();  </script>
+            <script src="../js/bootstrap.bundle.min.js"></script>
         </body>
     </html>
